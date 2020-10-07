@@ -1,0 +1,41 @@
+@import 'sass/variables.scss';
+
+.pagination{
+    width: 268px;
+    height: 64px;
+    border-radius: 9px;
+    margin: 50px 0;
+   
+    .paginationIcon{
+      border: 1px solid #BDC0CE;
+      border-radius: 6px;
+      padding: 9px 15px;
+      margin: 5px;
+    }
+    .numbers{
+        font-size: $extraLarge-font-size;
+        border:1px solid #BDC0CE;
+        border-radius: 6px;
+        font-size: 23px;
+        padding:5px 15px;
+        margin: 7px;
+        color: #000000;
+        cursor: pointer;
+        &.current {
+          background-color: $secondary-blue;
+          color: white;
+         
+        }
+        &.darkMode{
+          color: $secondary-white;
+        }
+    }
+    .prevPage, .nextPage {
+      cursor: pointer;
+      &.disabled {
+        opacity: 0.3;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+}

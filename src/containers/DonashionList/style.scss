@@ -1,0 +1,16 @@
+.DonashionList{
+    background-color: #E2E2E2;
+    .donators{
+        text-transform: uppercase;
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 350px){
+ .DonashionList{
+     .donators{
+         padding: 60px;
+         font-size: 14.8px;
+     }
+ }
+}

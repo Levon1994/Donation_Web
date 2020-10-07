@@ -1,0 +1,514 @@
+@import "~sass/variables";
+
+.Main{
+  margin-top: 50px;
+  .titleTextBlock{
+    width: 550px;
+    max-height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0 80px 0;
+      .titleText{
+        font-weight: bold;
+        color: $secondary-black;
+        text-align: center;
+      }
+    .titleButton{
+      margin-top: 30px;
+    }
+  }
+  .infoBlock {
+
+    .infoBlockTitle{
+      padding: 80px 0;
+      margin: 70px 0;
+      display: flex;
+      justify-content: center;
+    } 
+  .contain{
+    .leftBox{
+      height: 300px;
+      background-color: $secondary-blue;
+      flex-grow: 1;
+    }
+    .size{
+
+      max-width: 1280px;
+      flex-grow: 40;
+      .blueBox {
+        border-top-right-radius: 15px;
+        .textContainer{
+          width: 83%;
+          padding: 30px;
+          .textContainerTitle{
+            color: $secondary-white;
+          }
+          .textContainerInfo{
+            margin-top: 30px;
+            color: $secondary-white;
+          }
+        }
+        width: 55%;
+        padding: 13px;
+        background-color: $secondary-blue;
+      }
+      .container {
+        position: relative;
+        bottom: 100px;
+        .whiteBox {
+          border-top-left-radius: 15px;
+          .textContainer{
+            width: 83%;
+            padding: 50px;
+            .textContainerInfo{
+              margin-top: 30px;
+              color: $secondary-black;
+            }
+          }
+          width: 55%;
+          height: 200px;
+          background-color: $secondary-white;
+        }
+      }
+    }
+    .rightBox{
+      position: relative;
+      bottom: 100px;
+      flex-grow: 1;
+      height: 200px;
+      background-color: $secondary-white;
+      display: flex;
+      justify-content: right;
+      align-self: flex-end;
+    }
+  }
+  }
+  .videoBlock{
+    .videoBlockText{
+      padding: 70px 0;
+    }
+    .videoBox{
+      padding: 0 20px 20px 20px;
+      .videoItem{
+        margin-left: 10px;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+      .videoItem2{
+        margin:9px 0 0 10px;
+      }
+      .videoItem3{
+        margin-top: 20px;
+      }
+    }
+  }
+  .waveBlock{
+    .waveBlockText{
+      padding: 70px 0;
+    }
+    .wavePage-content{
+      height: 100%;
+    }
+    .wave{
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: auto;
+      padding: 100px 0;
+      .leftSideContent{
+        align-items: flex-end;
+         padding-bottom: 70px;
+         width: 50%;
+         position: relative;
+         top: 150px;
+      .leftside{
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        padding: 30px;
+        .waveBlockTitle{
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .rightSideContent{
+      align-items: flex-start;
+      padding-top: 50px;
+      width: 50%;
+      .rightside{
+        border-radius: 10px;
+        width: 100%;
+        padding: 30px;
+        background-color: white;
+        position: relative;
+         bottom: 140px;
+        .waveBlockTitle{
+          padding-bottom: 10px;
+        }
+
+      }
+    }
+      .page-content{
+        height: 100%;
+      }
+    }
+  }
+  .SliderBlock{
+    margin-top: 40px;
+    .leftBox{
+      height: 430px;
+      background-color: $secondary-blue;
+      flex-grow: 1;
+    }
+    .size{
+      max-width: 1280px;
+      flex-grow: 40;
+      .blueBox{
+        width: 33%;
+        padding: 40px;
+        background-color: $secondary-blue;
+        .imgContainer{
+          .sliderimg{
+            position: relative;
+            z-index: 9999;
+          }
+        }
+      }
+      .container {
+        position: relative;
+        bottom: 100px;
+        .whiteBox {
+          border-top-left-radius: 15px;
+          width: 77%;
+          padding: 50px;
+          background-color: #F7F7F7;
+          display: flex;
+          align-items: center;
+          .insideContain{
+            width: 85%;
+          .SlideContainer{
+            width: 80%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+          }
+          .SliderTextTitle{
+            padding-right: 50px;
+          }
+          .leftArrow{
+            width: 50px;
+            height:50px;
+            margin-top: 50px;
+            background-color: white;
+          }
+          .rightArrow{
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 15px ;
+            background-color: white;
+          }
+        }
+        }
+      }
+    }
+    .rightBox{
+      position: relative;
+      bottom: 100px;
+      flex-grow: 1;
+      height: 344px;
+      background-color:#F7F7F7;
+      display: flex;
+      justify-content: right;
+      align-self: flex-end;
+    }
+  }
+  .getInTouchBlock{
+    width: 50%;
+    padding: 25px;
+    .getInTouchBlockTitle{
+      padding: 25px;
+    }
+    .getInTouchBlockText{
+      padding: 25px;
+    }
+    .textField{
+      padding: 25px;
+    }
+  }
+  .imgBlock{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1060px){
+
+  .Main{
+    .coverPhoto{
+      width: 100% !important;
+    }
+    .infoBlock{
+      .infoBlockTitle{
+        margin: 30px 0 !important;
+      }
+      .contain{
+        flex-direction: column;
+        .leftBox{
+          width: 0;
+          height: 0;
+        }
+        .size{
+          .blueBox{
+            width: 100%;
+            .textContainer{
+              width: 100%;
+            }
+          }
+          .container{
+            bottom: 0;
+            .whiteBox{
+              height: 200px;
+              width: 100%;
+              .textContainer{
+                width: 100%;
+              }
+            }
+          }
+
+        }
+
+        .rightBox{
+          height: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 70%;
+          }
+        .rightSideContent{
+          width: 70%;
+          }
+       }
+      }
+
+      .videoBlock{
+        .media{
+          flex-direction: column;
+          align-items: center;
+        }
+        .videoBlockText{
+          margin-top: 20px;
+        }
+        .videoBox{
+          .videoItem{
+            margin-left: 3px !important;
+            margin-top: 10px;
+          }
+          .videoItem2{
+            margin: 9px 0 0 3px;
+          }
+        }
+      }
+      .SliderBlock{
+        .leftBox{
+          height: 0 !important;
+        }
+        .size{
+          .blueBox{
+            width: 0 !important;
+            padding: 0 !important;
+            background-color:none !important;
+            .imgContainer{
+              .sliderimg{
+                width: 100%;
+                height: 315px;
+                padding: 5px;
+              }
+            }
+          }
+          .container{
+            bottom: 0px !important;
+            .whiteBox{
+              .insideContain{
+               .SlideContainer{
+                 width: 100% !important;
+               }
+              }
+            }
+     
+          }
+        }
+        .rightBox{
+          height: 0 !important;
+        }
+
+
+
+    }
+    .getInTouchMedia{
+      flex-direction: column;
+      .getInTouchBlock{
+        width: 100% !important;
+        .getInTouchBlockText{
+          padding: 0 !important;
+        }
+        .getInTouchBlockTitle {
+          padding: 0 !important;
+          padding-bottom: 30px !important;
+        }
+      }
+      .imgBlock{
+        width: 100%;
+      }
+      .textField{
+        .TextFieldComponent{
+          .Button.medium{
+            width: 50%;
+            padding: 9px 10px !important;
+          }
+        }
+      }
+    }
+
+    }
+}
+@media screen and (max-width: 1000px){
+  .Main{
+
+    .waveBlock{
+      .wave{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .leftSideContent{
+          width: 38%;
+          top: 0px;
+          
+        }
+        .rightSideContent{
+          width: 38%;
+          padding-top: 0px;
+          margin-top: 40px;
+          .rightside{
+            bottom: 0px;
+          }
+        
+        }
+        .wavePage-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  }
+}
+}
+
+@media screen and (max-width: 800px){
+  .Main{
+    .infoBlock{
+      .contain{
+        .size{
+          .container{
+            .whiteBox{
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+    .waveBlock{
+      .wave{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .leftSideContent{
+          width: 60%;
+          top: 0px;
+          
+        }
+        .rightSideContent{
+          width: 60%;
+          padding-top: 0px;
+          margin-top: 40px;
+          .rightside{
+            bottom: 0px;
+          }
+        
+        }
+        .wavePage-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  }
+  .SliderBlock{
+    .size{
+      .container{
+        padding: 10px !important;
+        .whiteBox{
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+}
+@media screen and (max-width: 800px){
+  .Main{
+    .titleTextBlock{
+      width: 100%;
+    }
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 75%;
+        }
+        .rightSideContent{
+          width: 75%;
+        }
+      }
+  }
+}
+}
+@media screen and (max-width: 390px){
+  .Main{
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 100%;
+        }
+        .rightSideContent{
+          width: 100%;
+        }
+      }
+  }
+  .SliderBlock{
+    .size{
+      .whiteBox{
+        .insideContain{
+          .SlideContainer{
+            padding: 0 !important;
+          }
+        }
+      }
+      .blueBox{
+        .imgContainer{
+          .sliderimg{
+            width: 300px !important;
+            height: auto !important;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+}
